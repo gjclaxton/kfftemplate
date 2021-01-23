@@ -1,0 +1,75 @@
+---
+title: "Project Title"
+author: "Your Name"
+date: "<insert date created> and last compiled `r Sys.time`"
+output: output_format: html_format
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Summary of Project
+
+Describe the project, including the overall approach, data, and any special issues or observations that you feel a reviewer needs to understand. 
+
+Split your work into chunks with a brief text description of the step and any important information preceeding each chunk. 
+
+### Load libraries and data
+
+```{r load data, echo=TRUE}
+# Library(survey)
+# library(openxlsx)
+# options(scipen = 99)
+# 
+# Load data
+# pathway to data
+
+# Loading functions
+# source(pathway to functions)
+
+# if not an r project, what is the working directory
+
+```
+
+### Transform variables 
+
+Brief comment
+
+```{r transform variables, echo=TRUE}
+
+# variable transformations
+
+
+```
+
+### Analysis
+
+From here the type of analysis will determine how many steps and how to break them up
+
+Describe each step in text before the chunk
+
+### Save findings
+
+Brief description of what is being saved and where
+
+```{r}
+# save a list of table objects to separate xlsx sheets
+# tables_list <- list("sheetname" = table1, "sheet2name" = table2)
+
+# save to spreadsheet with data and time in name, each table as a separate tab
+# openxlsx::write.xlsx(tables_list, 
+#     file = paste(format(Sys.time(), '%Y_%m_%d %H_%M'), "filename.xlsx", sep = "_"))
+
+
+```
+
+
+### Draft methods if needed for project write up
+
+What do we want to tell readers about what we did
+
+
+
