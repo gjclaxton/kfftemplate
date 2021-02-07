@@ -1,8 +1,8 @@
 ---
 title: "Project Title"
 author: "Your Name"
-date: "<insert date created> and last compiled `r Sys.time`"
-output: output_format: html_format
+date: "<insert date created> and last compiled `r Sys.time()`"
+output: html_document
 editor_options: 
   chunk_output_type: console
 ---
